@@ -3,10 +3,6 @@
 
 #include <QMainWindow>
 
-QT_BEGIN_NAMESPACE
-namespace Ui { class EasySnipping; }
-QT_END_NAMESPACE
-
 class EasySnipping : public QMainWindow
 {
     Q_OBJECT
@@ -14,8 +10,5 @@ class EasySnipping : public QMainWindow
 public:
     EasySnipping(QWidget *parent = nullptr);
     ~EasySnipping();
-
-private:
-    Ui::EasySnipping *ui;
 };
 #endif // EASYSNIPPING_H

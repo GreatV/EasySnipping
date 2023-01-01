@@ -20,7 +20,6 @@ set(PROJECT_SOURCES
         main.cpp
         easysnipping.cpp
         easysnipping.h
-        easysnipping.ui
         ${TS_FILES}
 )
 
