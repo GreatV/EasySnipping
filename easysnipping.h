@@ -14,6 +14,8 @@ class EasySnipping : public QMainWindow
 public:
     EasySnipping(QWidget *parent = nullptr);
     ~EasySnipping();
+private:
+    QSystemTrayIcon *trayIcon;
 };
 
 #endif

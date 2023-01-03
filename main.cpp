@@ -7,7 +7,7 @@
 
 int main(int argc, char *argv[])
 {
-    Q_INIT_RESOURCE(easysnipping);
+    Q_INIT_RESOURCE(EasySnipping);
 
     QApplication a(argc, argv);
 

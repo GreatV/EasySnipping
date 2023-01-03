@@ -16,12 +16,14 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
 
 set(TS_FILES EasySnipping_zh_CN.ts)
 
+set(PROJECT_RESOURCES EasySnipping.qrc)
+
 set(PROJECT_SOURCES
         main.cpp
         easysnipping.cpp
         easysnipping.h
         ${TS_FILES}
-        easysnipping.qrc
+        ${PROJECT_RESOURCES}
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -29,6 +31,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
     )
+
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET EasySnipping APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
 #                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
