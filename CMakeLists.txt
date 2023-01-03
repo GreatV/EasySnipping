@@ -21,6 +21,7 @@ set(PROJECT_SOURCES
         easysnipping.cpp
         easysnipping.h
         ${TS_FILES}
+        easysnipping.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
